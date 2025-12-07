@@ -9,3 +9,14 @@ Silas' hackpad project created with help from Hackclub! I plan to use this proje
 - **8x** Blank DSA keycaps
 - **8x** Through-hole 1N4148 Diodes
 - 3d Printed Case & PCB
+## Cad
+All cad was created in Fusion 360 through Education. I really enjoyed using bevels on the edges to make it feel truely polished. All four eight holes in the base will be fitted with threaded inserts and they holes will use M3 bolts.
+
+<img src="./Images/base.png" width="40%"> <img src="./Images/lid.png" width="40%">
+## PCB
+PCBs were created in KICAD.
+
+<img src="./Images/pcbscr.png" width="38%"> <img src="./Images/schemscr.png" width="60%">
+
+
+<img src="./Images/full-render.PNG">
