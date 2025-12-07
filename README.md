@@ -8,8 +8,9 @@ Silas' hackpad project created with help from Hackclub! I plan to use this proje
 - **8x** Cherry MX Switches (Or equivilant)
 - **8x** Blank DSA keycaps
 - **8x** Through-hole 1N4148 Diodes
-- 3d Printed Case & PCB
-- Seeed XIAO RP2040
+- **1x** 3d Printed Case (Self Printing)
+- **1x** Manufactured PCB
+- **1x** Seeed XIAO RP2040
 ## Cad
 All cad was created in Fusion 360 through Education. I really enjoyed using bevels on the edges to make it feel truely polished. All four eight holes in the base will be fitted with threaded inserts and they holes will use M3 bolts.
 
@@ -21,4 +22,5 @@ PCBs were created in KICAD.
 
 
 <img src="./Images/full-render.PNG">
+
 
