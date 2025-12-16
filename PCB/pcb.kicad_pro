@@ -487,10 +487,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/silas/GitHub/SILAS-KEYPAD/Blender/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../Blender/pcb.stl",
+      "step": "../Blender/pcb.step",
       "svg": "",
       "vrml": ""
     },
