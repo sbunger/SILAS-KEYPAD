@@ -1,28 +1,39 @@
+# main.py
+# KMK firmware for Seeed Studio XIAO RP2040
+# Matrix: 4 columns x 2 rows
+
 import board
 
-from kmk.scanners import DiodeOrientation
 from kmk.kmk_keyboard import KMKKeyboard
-from kmk.scanners.keypad import KeysScanner
-from kmk.keys import KC
-from kmk.modules.macros import Press, Release, Tap, Macros
+from kmk.scanners import DiodeOrientation
+from kmk.modules.macros import Macros
+from kmk.keys import KC, Key
 
 keyboard = KMKKeyboard()
 
-macros = Macros()
-keyboard.modules.append(macros)
+keyboard.col_pins = (
+    board.D0,
+    board.D1,
+    board.D2,
+    board.D3,
+)
+keyboard.row_pins = (
+    board.D5,
+    board.D6,
+)
+keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
-# 4x2 matrix
-col_pins = (board.A0, board.A1, board.A2, board.A3)
-row_pins = (board.SLC, board.TX)
-diode_orientation = DiodeOrientation.COL2ROW
+keyboard.modules.append(Macros())
 
-# Here you define the buttons corresponding to the pins
-# Look here for keycodes: https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/keycodes.md
-# And here for macros: https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/macros.md
+# Macro test:
+# HELLO = KC.MACRO("WOW")
+
 keyboard.keymap = [
-    [KC.N1, KC.N2, KC.N3, KC.N4, KC.N5, KC.N6, KC.N7, KC.N8]
+    [
+        KC.LCTRL(KC.C), KC.LCTRL(KC.V), KC.LCTRL(KC.X), KC.LCTRL(KC.LALT(KC.DEL)),
+        KC.LCTRL(KC.T), KC.LCTRL(KC.W), KC.LSFT(KC.LCTRL(KC.T)), KC.LCTRL(KC.LSFT(KC.LALT(KC.F))),
+    ]
 ]
 
-# Start kmk!
-if __name__ == '__main__':
+if __name__ == "__main__":
     keyboard.go()
