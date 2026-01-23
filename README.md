@@ -3,8 +3,7 @@ Silas' hackpad project created with help from Hackclub! This macropad has eight 
 
 I created this macropad to gain experience in electronics while making something cool that I will actually use. Currently, the keys are as follows from left to right: Row 1: Copy, Paste, Cut, Ctrl-Alt-Del; Row 2: New Tab, Close Tab, Reopen Closed Tab, and new firefox window (requires custom shortcut on windows).
 
-<img src="./Images/irl1.jpg" width="46%">
-<img src="./Images/irl2.jpg" width="46%">
+<img src="./Images/irl1.jpg" width="50%"><img src="./Images/irl2.jpg" width="50%">
 
 ## Bill of Materials
 - **8x** M3x5mx4mm heatset inserts
@@ -30,6 +29,7 @@ Renders were created in Fusion and Blender.
 
 <img src="./Images/full-render.PNG">
 <img src="./Images/blender.png">
+
 
 
 
